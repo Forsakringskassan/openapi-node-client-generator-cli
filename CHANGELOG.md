@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.3 (2025-09-23)
+
+### Bug Fixes
+
+* **@forsakringskassan/openapi-node-client-generator-cli:** did not find template folder e5bebe1
+
 ## 1.0.2 (2025-09-23)
 
 ### Bug Fixes

@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.7 (2025-09-23)
+
+### Bug Fixes
+
+* **@forsakringskassan/openapi-node-client-generator-cli:** use the --openapi-spec-file d6f719a
+
 ## 1.0.6 (2025-09-23)
 
 ### Bug Fixes

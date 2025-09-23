@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.0.5 (2025-09-23)
+
+### Bug Fixes
+
+* **@forsakringskassan/openapi-node-client-generator-cli-template, @forsakringskassan/openapi-node-client-generator-cli, @forsakringskassan/openapi-node-generator-cli-npm:** trying to fix it 3d610c5
+* **@forsakringskassan/openapi-node-client-generator-cli-template, @forsakringskassan/openapi-node-generator-cli-npm:** avoid downloading the jar 692fdbb
+
 ## 1.0.4 (2025-09-23)
 
 ### Bug Fixes

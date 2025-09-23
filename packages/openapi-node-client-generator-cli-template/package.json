@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/openapi-node-client-generator-cli-template",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Template files",
   "keywords": [
     "openapi"
@@ -75,7 +75,7 @@
     "uuid": "11.1.0"
   },
   "dependencies": {
-    "@forsakringskassan/openapi-node-generator-cli-npm": "1.0.4"
+    "@forsakringskassan/openapi-node-generator-cli-npm": "1.0.5"
   },
   "peerDependencies": {
     "@forsakringskassan/apimock-express": "^2.0.0",

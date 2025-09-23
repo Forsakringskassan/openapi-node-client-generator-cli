@@ -5,6 +5,10 @@ import os from "os";
 import path from "path";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const pkg = JSON.parse(
     fs.readFileSync(new URL("./package.json", import.meta.url), "utf-8"),
@@ -17,24 +21,20 @@ const argv = yargs(hideBin(process.argv))
     .usage("Usage: $0 --package-name string --package-version string")
     .option("package-name", {
         type: "string",
-        describe: "Name of the npm package to create",
         demandOption: "Must have a name for the package to be generated.",
         nargs: 1,
     })
     .option("package-version", {
         type: "string",
-        describe: "Version of the npm package to create",
         demandOption: "Must have a name for the package to be generated.",
         nargs: 1,
     })
     .option("openapi-spec-file", {
         type: "string",
-        describe: "Name of OpenAPI spec file",
         default: "openapi.yaml",
     })
     .option("dry-run", {
         type: "boolean",
-        describe: "Will not change anything",
         default: false,
     })
     .help()

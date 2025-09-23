@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/openapi-node-client-generator-cli-template",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Template files",
   "keywords": [
     "openapi"
@@ -65,8 +65,7 @@
   "devDependencies": {
     "@forsakringskassan/apimock-express": "2.6.1",
     "@forsakringskassan/prettier-config": "3.0.5",
-    "@forsakringskassan/openapi-node-generator-cli-npm": "1.0.0",
-    "@types/node": "20.15.0",
+    "@types/node": "^24.5.2",
     "dts-bundle-generator": "9.5.1",
     "esbuild": "0.25.3",
     "esbuild-plugin-esm-cjs-shim": "0.1.0",
@@ -74,6 +73,9 @@
     "npm-run-all2": "7.0.2",
     "typescript": "5.8.2",
     "uuid": "11.1.0"
+  },
+  "dependencies": {
+    "@forsakringskassan/openapi-node-generator-cli-npm": "1.0.4"
   },
   "peerDependencies": {
     "@forsakringskassan/apimock-express": "^2.0.0",

@@ -17,7 +17,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build --workspaces --if-present",
+    "build": "lerna run build",
     "lerna": "lerna",
     "test": "npm run test-generator-cli && npm run test-cli-npm",
     "test-generator-cli": "npm run openapi-node-client-generator-cli -- --dry-run --package-name X --package-version Y",
@@ -32,6 +32,7 @@
     "@forsakringskassan/semantic-release-monorepo-config": "^3.3.5",
     "@html-validate/release-scripts": "6.9.6",
     "lerna": "8.2.4",
+    "typescript": "^5.2.2",
     "rimraf": "6.0.1"
   },
   "engines": {

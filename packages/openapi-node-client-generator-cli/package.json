@@ -28,10 +28,8 @@
     "build": "./copy-template.sh",
     "test": "./cli.mjs --dry-run --package-name X --package-version Y"
   },
-  "devDependencies": {
-    "@forsakringskassan/openapi-node-client-generator-cli-template": "1.0.0"
-  },
   "dependencies": {
+    "@forsakringskassan/openapi-node-client-generator-cli-template": "1.0.4",
     "yargs": "^17.7.2"
   },
   "engines": {

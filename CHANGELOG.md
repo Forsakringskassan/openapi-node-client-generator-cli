@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.6 (2025-09-23)
+
+### Bug Fixes
+
+* **@forsakringskassan/openapi-node-client-generator-cli, @forsakringskassan/openapi-node-generator-cli-npm:** was unable to run cli aae1190
+
 ## 1.0.5 (2025-09-23)
 
 ### Bug Fixes

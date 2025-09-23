@@ -16,10 +16,13 @@
   "license": "MIT",
   "author": "Försäkringskassan",
   "files": [
-    "*.js",
-    "lib"
+    "cli.mjs",
+    "copy-template.sh",
+    "template"
   ],
-  "bin": "./cli.js",
+  "bin": {
+    "openapi-node-client-generator-cli": "./cli.mjs"
+  },
   "scripts": {
     "build": "./copy-template.sh",
     "test": "./cli.mjs --dry-run --package-name X --package-version Y"

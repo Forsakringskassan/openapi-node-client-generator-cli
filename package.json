@@ -19,7 +19,9 @@
   "scripts": {
     "build": "npm run build --workspaces --if-present",
     "lerna": "lerna",
-    "test": "true"
+    "test": "npm run test-cli",
+    "test-cli": "npm run cli -- --dry-run --package-name X --package-version Y",
+    "cli": "npm exec --workspace=@forsakringskassan/openapi-node-client-generator-cli -- openapi-node-client-generator-cli"
   },
   "release": {
     "extends": "@forsakringskassan/semantic-release-monorepo-config"

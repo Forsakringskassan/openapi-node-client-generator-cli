@@ -26,3 +26,4 @@ typescript-axios
 typescript-fetch
 openapi-generator-cli.jar
 packages/openapi-node-client-generator-cli/template/
+packages/example-template

@@ -19,3 +19,6 @@ jobs:
                   npm ci
             - name: Build
               run: npm run --if-present build
+            - name: Verify with template
+              run: |
+                ./verify-with-template.sh

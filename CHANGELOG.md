@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.1 (2025-09-23)
+
+### Bug Fixes
+
+* **@forsakringskassan/openapi-node-client-generator-cli:** did not execute cli 12f6102
+
 ## 1.0.0 (2025-09-23)
 
 ### ⚠ BREAKING CHANGES

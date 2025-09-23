@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/openapi-node-client-generator-cli-monorepo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "keywords": [
     "openapi"

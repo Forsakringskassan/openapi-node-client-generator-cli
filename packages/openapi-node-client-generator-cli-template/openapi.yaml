@@ -1,0 +1,24 @@
+openapi: 3.0.3
+info:
+  title: Ping API
+  description: A simple API with a ping endpoint.
+  version: 1.0.0
+servers:
+  - url: https://api.example.com
+    description: Example server
+paths:
+  /ping:
+    get:
+      summary: Health check endpoint
+      description: Returns "pong" to confirm the API is alive.
+      responses:
+        '200':
+          description: Successful ping
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: pong

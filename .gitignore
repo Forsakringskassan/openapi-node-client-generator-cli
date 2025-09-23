@@ -19,3 +19,10 @@ npm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+dist
+openapitools.json
+typescript-axios
+typescript-fetch
+packages/openapi-node-generator-cli-npm/bin/
+packages/openapi-node-client-generator-cli/template/

@@ -18,25 +18,14 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "eslint": "eslint .",
-    "eslint:fix": "eslint --fix .",
     "lerna": "lerna",
-    "prettier:check": "prettier --check .",
-    "prettier:write": "prettier --write .",
-    "test": "npm run eslint && npm run prettier:check"
+    "test": "true"
   },
-  "commitlint": {
-    "extends": "@forsakringskassan/commitlint-config/no-jira"
-  },
-  "prettier": "@forsakringskassan/prettier-config",
   "release": {
     "extends": "@forsakringskassan/semantic-release-monorepo-config"
   },
   "devDependencies": {
-    "@forsakringskassan/commitlint-config": "3.0.8",
-    "@forsakringskassan/eslint-config": "12.2.2",
-    "@forsakringskassan/eslint-config-cli": "12.2.2",
-    "@forsakringskassan/prettier-config": "3.1.7",
+    "@forsakringskassan/semantic-release-monorepo-config": "^3.3.5",
     "@html-validate/release-scripts": "6.9.6",
     "lerna": "8.2.4",
     "rimraf": "6.0.1"

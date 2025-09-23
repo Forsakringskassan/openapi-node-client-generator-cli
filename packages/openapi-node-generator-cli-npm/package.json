@@ -1,0 +1,28 @@
+{
+  "name": "@forsakringskassan/openapi-node-generator-cli-npm",
+  "version": "0.0.1",
+  "description": "Downloader Openapi Generator CLI",
+  "keywords": [
+    "openapi"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli",
+  "bugs": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli.git",
+    "directory": "packages/openapi-node-client-generator-cli-template"
+  },
+  "license": "UNLICENSED",
+  "author": "FK IT",
+  "scripts": {
+    "build": "node ./scripts/copy-jar.js",
+    "test": "true"
+  },
+  "files": [
+    "bin/"
+  ],
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "2.14.0",
+    "semver": "^7.7.2"
+  }
+}

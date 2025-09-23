@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "target": "ES6",
+        "module": "ESNext",
+        "declaration": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "rootDirs": ["./src", "./build"],
+        "paths": {
+            "typescript-fetch": ["./typescript-fetch"],
+            "typescript-axios": ["./typescript-axios"]
+        },
+        "removeComments": false,
+        "strict": true,
+        "moduleResolution": "bundler",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true
+    }
+}

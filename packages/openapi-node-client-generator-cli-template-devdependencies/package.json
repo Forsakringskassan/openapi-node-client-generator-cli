@@ -1,0 +1,49 @@
+{
+  "name": "@forsakringskassan/openapi-node-client-generator-cli-template-devdependencies",
+  "version": "0.0.1",
+  "description": "Försäkringskassan semantic-release base configuration",
+  "keywords": [
+    "semantic-release"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli",
+  "bugs": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli.git",
+    "directory": "packages/openapi-node-client-generator-cli-template-devdependencies"
+  },
+  "license": "MIT",
+  "author": "Försäkringskassan",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+    "devDependencies": {
+        "@forsakringskassan/apimock-express": "2.6.1",
+        "@forsakringskassan/prettier-config": "3.0.5",
+        "@openapitools/openapi-generator-cli": "2.14.0",
+        "@types/node": "20.15.0",
+        "dts-bundle-generator": "9.5.1",
+        "esbuild": "0.25.3",
+        "esbuild-plugin-esm-cjs-shim": "0.1.0",
+        "glob": "11.0.2",
+        "npm-run-all2": "7.0.2",
+        "typescript": "5.8.2",
+        "uuid": "11.1.0"
+    },
+    "peerDependencies": {
+        "@forsakringskassan/apimock-express": "^2.0.0",
+        "axios": "^1.0.0"
+    },
+    "peerDependenciesMeta": {
+        "@forsakringskassan/apimock-express": {
+            "optional": true
+        },
+        "axios": {
+            "optional": true
+        }
+    },
+  "engines": {
+    "node": ">= 20.8.1",
+    "npm": ">= 7"
+  }
+}

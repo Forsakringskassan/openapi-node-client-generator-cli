@@ -1,0 +1,28 @@
+{
+  "name": "@forsakringskassan/openapi-node-client-generator-cli",
+  "version": "0.0.1",
+  "description": "Wraps Openapi Generator CLI. Generates an opinionated, minimal config, client NPM package, given an OpenAPI spec.",
+  "keywords": [
+    "openapi"
+  ],
+  "homepage": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli",
+  "bugs": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli.git",
+    "directory": "packages/openapi-node-client-generator-cli"
+  },
+  "license": "MIT",
+  "author": "Försäkringskassan",
+  "files": [
+    "*.js",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 20.8.1",
+    "npm": ">= 7"
+  }
+}

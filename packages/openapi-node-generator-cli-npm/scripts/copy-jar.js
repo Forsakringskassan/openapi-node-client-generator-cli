@@ -23,7 +23,7 @@ if (versions.length === 0) {
 const highest = versions[0];
 
 const src = path.join(versionsDir, `${highest}.jar`);
-const destDir = path.resolve(__dirname, "../bin");
+const destDir = path.resolve(__dirname, "..");
 const dest = path.join(destDir, "openapi-generator-cli.jar");
 
 fs.mkdirSync(destDir, { recursive: true });

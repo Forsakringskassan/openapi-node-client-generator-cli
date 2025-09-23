@@ -2,6 +2,7 @@
   "name": "@forsakringskassan/openapi-node-generator-cli-npm",
   "version": "1.0.0",
   "description": "Downloader Openapi Generator CLI",
+    "runnable-jar-regexp": ".*openapi-generator-cli.jar",
   "keywords": [
     "openapi"
   ],
@@ -19,10 +20,17 @@
     "test": "true"
   },
   "files": [
-    "bin/"
+    "bin.js",
+    "*.jar"
   ],
+  "bin": {
+    "openapi-node-generator-cli-npm": "./bin.js"
+  },
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "2.14.0",
     "semver": "^7.7.2"
+  },
+  "dependencies": {
+    "npm-java-runner": "^1.0.2"
   }
 }

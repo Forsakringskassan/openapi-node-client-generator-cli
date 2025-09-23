@@ -19,9 +19,11 @@
   "scripts": {
     "build": "npm run build --workspaces --if-present",
     "lerna": "lerna",
-    "test": "npm run test-cli",
-    "test-cli": "npm run cli -- --dry-run --package-name X --package-version Y",
-    "cli": "npm exec --workspace=@forsakringskassan/openapi-node-client-generator-cli -- openapi-node-client-generator-cli"
+    "test": "npm run test-generator-cli && npm run test-cli-npm",
+    "test-generator-cli": "npm run openapi-node-client-generator-cli -- --dry-run --package-name X --package-version Y",
+    "test-cli-npm": "npm run openapi-node-generator-cli-npm -- version",
+    "openapi-node-client-generator-cli": "npm exec --workspace=@forsakringskassan/openapi-node-client-generator-cli -- openapi-node-client-generator-cli",
+    "openapi-node-generator-cli-npm": "npm exec --workspace=@forsakringskassan/openapi-node-generator-cli-npm -- openapi-node-generator-cli-npm"
   },
   "release": {
     "extends": "@forsakringskassan/semantic-release-monorepo-config"

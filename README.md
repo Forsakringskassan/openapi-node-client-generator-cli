@@ -4,4 +4,4 @@ Wraps Openapi Generator CLI. Generates an opinionated, minimal config, client NP
 
 ## Usage
 
-TODO...
+See example: https://github.com/Forsakringskassan/openapi-node-client-template

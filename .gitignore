@@ -24,5 +24,5 @@ dist
 openapitools.json
 typescript-axios
 typescript-fetch
-packages/openapi-node-generator-cli-npm/bin/
+openapi-generator-cli.jar
 packages/openapi-node-client-generator-cli/template/

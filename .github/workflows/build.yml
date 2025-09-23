@@ -21,4 +21,4 @@ jobs:
               run: npm run --if-present build
             - name: Verify with template
               run: |
-                ./verify-with-template.sh
+                npm run test-template-repo

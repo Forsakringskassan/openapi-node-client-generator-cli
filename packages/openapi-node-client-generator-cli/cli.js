@@ -58,7 +58,8 @@ async function run({ packageName, packageVersion, dryRun, openapiSpecFile }) {
     fs.cpSync(templatePath, targetFolder, { recursive: true });
 
     const createdPkgJsonPath = path.join(targetFolder, "package.json");
-    const createdPkg = JSON.parse(fs.readFileSync(createdPkgJsonPath, "utf-8"));
+    const createdPkgJsonContent = fs.readFileSync(createdPkgJsonPath, "utf-8").replaceAll(" openapi.yaml ",` ${openapiSpecFile} `)
+    const createdPkg = JSON.parse(createdPkgJsonContent);
     createdPkg.version = packageVersion;
     createdPkg.name = packageName;
     fs.writeFileSync(createdPkgJsonPath, JSON.stringify(createdPkg, null, 2), "utf-8");

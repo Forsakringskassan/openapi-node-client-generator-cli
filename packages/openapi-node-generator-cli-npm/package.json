@@ -2,6 +2,7 @@
   "name": "@forsakringskassan/openapi-node-generator-cli-npm",
   "version": "1.0.5",
   "description": "Downloader Openapi Generator CLI",
+  "type": "module",
   "runnable-jar-regexp": ".*openapi-generator-cli.jar",
   "keywords": [
     "openapi"
@@ -18,10 +19,11 @@
   "scripts": {
     "build": "npm run download-jar && npm run copy-jar",
     "download-jar": "npx @openapitools/openapi-generator-cli version",
-    "copy-jar": "node ./scripts/copy-jar.js",
+    "copy-jar": "node ./scripts/copy-jar.cjs",
     "test": "true"
   },
   "files": [
+    "cli.js",
     "bin.js",
     "*.jar"
   ],

@@ -54,20 +54,14 @@ async function run({ packageName, packageVersion, dryRun, openapiSpecFile }) {
     console.log(`Using OpenAPI spec file: ${openapiSpecFile}`);
     console.log(`Generating to: ${targetFolder}`);
 
-    fs.cpSync("./template", targetFolder, { recursive: true });
+    const templatePath = path.join(__dirname, "template");
+    fs.cpSync(templatePath, targetFolder, { recursive: true });
 
-    const createdPkgJsonPath= `${targetFolder}/package.json`
-    const createdPkg = JSON.parse(
-        fs.readFileSync(
-            new URL(createdPkgJsonPath, import.meta.url),
-            "utf-8",
-        ),
-    );
+    const createdPkgJsonPath = path.join(targetFolder, "package.json");
+    const createdPkg = JSON.parse(fs.readFileSync(createdPkgJsonPath, "utf-8"));
     createdPkg.version = packageVersion;
     createdPkg.name = packageName;
-    const createdPkgJson = JSON.stringify(createdPkg, null, 2);
-    console.log(createdPkgJson);
-    fs.writeFileSync(createdPkgJsonPath,createdPkgJson,'utf-8'
-    );
-    console.log(`Patched ${createdPkgJsonPath}`)
+    fs.writeFileSync(createdPkgJsonPath, JSON.stringify(createdPkg, null, 2), "utf-8");
+
+    console.log(`Patched ${createdPkgJsonPath}`);
 }

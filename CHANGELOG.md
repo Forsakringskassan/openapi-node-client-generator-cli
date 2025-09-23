@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.4 (2025-09-23)
+
+### Bug Fixes
+
+* **@forsakringskassan/openapi-node-client-generator-cli:** did not find __dirname d28d64e
+
 ## 1.0.3 (2025-09-23)
 
 ### Bug Fixes

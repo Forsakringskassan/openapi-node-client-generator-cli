@@ -30,10 +30,10 @@
     "extends": "@forsakringskassan/semantic-release-monorepo-config"
   },
   "devDependencies": {
-    "@forsakringskassan/semantic-release-monorepo-config": "^3.3.5",
+    "@forsakringskassan/semantic-release-monorepo-config": "3.3.5",
     "@html-validate/release-scripts": "6.9.6",
     "lerna": "8.2.4",
-    "typescript": "^5.2.2",
+    "typescript": "5.9.2",
     "rimraf": "6.0.1"
   },
   "engines": {

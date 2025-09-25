@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.1.0 (2025-09-25)
+
+### Features
+
+* **@forsakringskassan/openapi-node-client-generator-cli-template:** adding git clean script 75caff0
+
 ## 2.0.1 (2025-09-25)
 
 ### Bug Fixes

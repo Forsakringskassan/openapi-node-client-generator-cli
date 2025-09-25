@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 2.0.0 (2025-09-25)
+
+### ⚠ BREAKING CHANGES
+
+* **@forsakringskassan/openapi-node-client-generator-cli-template:** removing Axios
+
+### Features
+
+* **@forsakringskassan/openapi-node-client-generator-cli-template:** removing Axios 51040e7
+
 ## 1.0.7 (2025-09-23)
 
 ### Bug Fixes

@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.0.1 (2025-09-25)
+
+### Bug Fixes
+
+* **@forsakringskassan/openapi-node-generator-cli-npm:** trigger new version a6d019c
+
 ## 2.0.0 (2025-09-25)
 
 ### ⚠ BREAKING CHANGES

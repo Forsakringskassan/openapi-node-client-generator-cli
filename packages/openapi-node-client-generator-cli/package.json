@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/openapi-node-client-generator-cli",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Wraps Openapi Generator CLI. Generates an opinionated, minimal config, client NPM package, given an OpenAPI spec.",
   "type": "module",
   "keywords": [
@@ -29,7 +29,7 @@
     "test": "./cli.mjs --dry-run --package-name X --package-version Y"
   },
   "dependencies": {
-    "@forsakringskassan/openapi-node-client-generator-cli-template": "2.0.0",
+    "@forsakringskassan/openapi-node-client-generator-cli-template": "2.0.1",
     "yargs": "^17.7.2"
   },
   "engines": {

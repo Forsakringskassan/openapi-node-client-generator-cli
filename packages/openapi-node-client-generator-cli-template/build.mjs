@@ -10,10 +10,6 @@ import { generateForBrowser } from "@forsakringskassan/apimock-express";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const rootPath = join(__dirname, ".");
 
-fs.rmSync(join(rootPath, "/dist/typescript-axios"), {
-    recursive: true,
-    force: true,
-});
 fs.rmSync(join(rootPath, "/dist/typescript-fetch"), {
     recursive: true,
     force: true,
@@ -28,16 +24,16 @@ fs.rmSync(join(rootPath, "/dist/generators"), {
 const commonConfig = {
     minify: false,
     bundle: true,
-    external: ["axios"],
+    external: [],
     outdir: join(rootPath, "/dist"),
 };
 
-/* Axios & Fetch Generatorer */
+/* Fetch Generatorer */
 const extension = {
     esm: ".mjs",
     cjs: ".cjs",
 };
-for (const generator of ["axios", "fetch"]) {
+for (const generator of ["fetch"]) {
     for (const format of ["cjs", "esm"]) {
         await build({
             entryPoints: [
@@ -45,7 +41,7 @@ for (const generator of ["axios", "fetch"]) {
             ],
             minify: false,
             bundle: true,
-            external: ["axios"],
+            external: [],
             outfile: join(
                 rootPath,
                 "/dist/generators",
@@ -88,8 +84,8 @@ await build({
     target: "node20",
 });
 
-/* Fixa legacy imports utav fetch och axios */
-for (const type of ["axios", "fetch"]) {
+/* Fixa legacy imports utav fetch */
+for (const type of ["fetch"]) {
     fs.mkdirSync(join(rootPath, `/dist/typescript-${type}`));
     fs.copyFileSync(
         join(rootPath, `/dist/generators/${type}/index.cjs`),

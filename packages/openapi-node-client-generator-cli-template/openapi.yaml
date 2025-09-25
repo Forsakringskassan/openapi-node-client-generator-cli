@@ -7,18 +7,23 @@ servers:
   - url: https://api.example.com
     description: Example server
 paths:
-  /ping:
+  /api/ping:
     get:
       summary: Health check endpoint
-      description: Returns "pong" to confirm the API is alive.
+      description: Returns a pong response to confirm the API is alive.
       responses:
         '200':
           description: Successful ping
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  message:
-                    type: string
-                    example: pong
+                $ref: '#/components/schemas/PingResponse'
+
+components:
+  schemas:
+    PingResponse:
+      type: object
+      properties:
+        pong:
+          type: boolean
+          example: true

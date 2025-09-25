@@ -53,7 +53,8 @@
     "generate:copy-id": "[ -d ci ] && cp -rvu ci dist || true",
     "generate:bundle": "node build.mjs",
     "generate:typings": "dts-bundle-generator --config dts-config.js",
-    "prettier:write": "prettier --no-error-on-unmatched-pattern \"src/mock/{**/,}*.{js,json,ts}\" --write"
+    "prettier:write": "prettier --no-error-on-unmatched-pattern \"src/mock/{**/,}*.{js,json,ts}\" --write",
+    "git:clean": "git clean -fdx"
   },
   "devDependencies": {
     "@forsakringskassan/apimock-express": "2.6.1",

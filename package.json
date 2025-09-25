@@ -24,7 +24,8 @@
     "test-cli-npm": "npm run openapi-node-generator-cli-npm -- version",
     "test-template-repo": "./verify-with-template.sh",
     "openapi-node-client-generator-cli": "npm exec --workspace=@forsakringskassan/openapi-node-client-generator-cli -- openapi-node-client-generator-cli",
-    "openapi-node-generator-cli-npm": "npm exec --workspace=@forsakringskassan/openapi-node-generator-cli-npm -- openapi-node-generator-cli-npm"
+    "openapi-node-generator-cli-npm": "npm exec --workspace=@forsakringskassan/openapi-node-generator-cli-npm -- openapi-node-generator-cli-npm",
+    "git:clean": "git clean -fdx"
   },
   "release": {
     "extends": "@forsakringskassan/semantic-release-monorepo-config"

@@ -8,8 +8,7 @@
         "outDir": "./dist",
         "rootDirs": ["./src", "./build"],
         "paths": {
-            "typescript-fetch": ["./typescript-fetch"],
-            "typescript-axios": ["./typescript-axios"]
+            "typescript-fetch": ["./typescript-fetch"]
         },
         "removeComments": false,
         "strict": true,

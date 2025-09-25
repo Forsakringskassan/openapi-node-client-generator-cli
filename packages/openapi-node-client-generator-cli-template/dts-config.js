@@ -9,16 +9,8 @@ const config = {
 
     entries: [
         {
-            filePath: "./typescript-axios/index.ts",
-            outFile: "./dist/typescript-axios/index.d.ts",
-        },
-        {
             filePath: "./typescript-fetch/index.ts",
             outFile: "./dist/typescript-fetch/index.d.ts",
-        },
-        {
-            filePath: "./typescript-axios/index.ts",
-            outFile: "./dist/generators/axios/index.d.ts",
         },
         {
             filePath: "./typescript-fetch/index.ts",

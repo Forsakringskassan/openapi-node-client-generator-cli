@@ -33,11 +33,6 @@
       "import": "./dist/generators/fetch/index.mjs",
       "require": "./dist/generators/fetch/index.cjs"
     },
-    "./axios": {
-      "types": "./dist/generators/axios/index.d.ts",
-      "import": "./dist/generators/axios/index.mjs",
-      "require": "./dist/generators/axios/index.cjs"
-    },
     "./mock": {
       "types": "./dist/mock/index.d.ts",
       "import": "./dist/mock/index.mjs",
@@ -46,16 +41,14 @@
     "./browser-mock": {
       "import": "./dist/browser-mock.mjs"
     },
-    "./dist/typescript-fetch": "./dist/typescript-fetch/index.js",
-    "./dist/typescript-axios": "./dist/typescript-axios/index.js"
+    "./dist/typescript-fetch": "./dist/typescript-fetch/index.js"
   },
   "scripts": {
     "prebuild": "npm run prettier:write",
     "build": "run-s generate:* && cp openapi.yaml dist",
     "postbuild": "tsc",
     "generate:javascript-closure-angular": "openapi-node-generator-cli-npm generate -g javascript-closure-angular -i openapi.yaml -o dist/javascript-closure-angular --additional-properties useEs6=true",
-    "generate:typescript-axios": "openapi-node-generator-cli-npm generate -g typescript-axios -t template/typescript-axios -i openapi.yaml -o typescript-axios --additional-properties supportsES6=true",
-    "generate:typescript-fetch": "openapi-node-generator-cli-npm generate -g typescript-fetch -i openapi.yaml -o typescript-fetch --additional-properties supportsES6=true,typescriptThreePlus=true",
+    "generate:typescript-fetch": "openapi-node-generator-cli-npm generate -g typescript-fetch -t template/typescript-fetch -i openapi.yaml -o typescript-fetch --additional-properties supportsES6=true,typescriptThreePlus=true",
     "generate:openapi-complete-spec": "openapi-node-generator-cli-npm generate -g openapi-yaml -i openapi.yaml -o dist/openapi-complete-spec",
     "generate:copy-id": "[ -d ci ] && cp -rvu ci dist || true",
     "generate:bundle": "node build.mjs",
@@ -71,6 +64,7 @@
     "esbuild-plugin-esm-cjs-shim": "0.1.0",
     "glob": "11.0.3",
     "npm-run-all2": "7.0.2",
+    "prettier": "^3.0.0",
     "typescript": "5.9.2",
     "uuid": "11.1.0"
   },
@@ -78,8 +72,7 @@
     "@forsakringskassan/openapi-node-generator-cli-npm": "1.0.6"
   },
   "peerDependencies": {
-    "@forsakringskassan/apimock-express": "^2.0.0",
-    "axios": "^1.0.0"
+    "@forsakringskassan/apimock-express": "^2.0.0"
   },
   "peerDependenciesMeta": {
     "@forsakringskassan/apimock-express": {

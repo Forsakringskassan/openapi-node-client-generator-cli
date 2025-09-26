@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.2.0 (2025-09-26)
+
+### Features
+
+* **deps:** update dependency yargs to v18 c62c99d
+
 ## 2.1.0 (2025-09-25)
 
 ### Features

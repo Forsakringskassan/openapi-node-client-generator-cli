@@ -64,6 +64,7 @@ async function run({ packageName, packageVersion, packageUrl, dryRun, openapiSpe
     const createdPkgJsonPath = path.join(targetFolder, "package.json");
     const createdPkgJsonContent = fs.readFileSync(createdPkgJsonPath, "utf-8").replaceAll(" openapi.yaml ",` ${openapiSpecFile} `)
     const createdPkg = JSON.parse(createdPkgJsonContent);
+    createdPkg.private = false;
     createdPkg.version = packageVersion;
     createdPkg.name = packageName;
     createdPkg.homepage = packageUrl;

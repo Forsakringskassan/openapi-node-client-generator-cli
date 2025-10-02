@@ -29,6 +29,10 @@ const argv = yargs(hideBin(process.argv))
         demandOption: "Must have a name for the package to be generated.",
         nargs: 1,
     })
+    .option("package-url", {
+        type: "string",
+        nargs: 1,
+    })
     .option("openapi-spec-file", {
         type: "string",
         default: "openapi.yaml",
@@ -42,7 +46,7 @@ const argv = yargs(hideBin(process.argv))
 
 run(argv);
 
-async function run({ packageName, packageVersion, dryRun, openapiSpecFile }) {
+async function run({ packageName, packageVersion, packageUrl, dryRun, openapiSpecFile }) {
     if (dryRun) {
         console.log(`\n*** Dry run enabled: nothing will be changed ***\n`);
     }
@@ -62,6 +66,12 @@ async function run({ packageName, packageVersion, dryRun, openapiSpecFile }) {
     const createdPkg = JSON.parse(createdPkgJsonContent);
     createdPkg.version = packageVersion;
     createdPkg.name = packageName;
+    createdPkg.homepage = packageUrl;
+    createdPkg.bugs = `${packageUrl}/issues`;
+    createdPkg.repository = {
+        type: "git",
+        url: `${packageUrl}.git`,
+    };
     fs.writeFileSync(createdPkgJsonPath, JSON.stringify(createdPkg, null, 2), "utf-8");
 
     console.log(`Patched ${createdPkgJsonPath}`);

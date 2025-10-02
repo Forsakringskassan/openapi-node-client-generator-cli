@@ -14,7 +14,7 @@ npx @forsakringskassan/openapi-node-client-generator-cli@latest \
 
 This will create a complete NPM package ready to be built and published. So that you only need to have the `openapi.yaml` spec in your version control system.
 
-See example: https://github.com/Forsakringskassan/api-template
+See example: https://github.com/Forsakringskassan/template-api
 
 A typical pipeline building such a repository might look something like:
 

@@ -3,7 +3,7 @@ set -ex
 
 clone_fresh_template() {
   rm -rf example-template
-  git clone https://github.com/Forsakringskassan/api-template.git example-template
+  git clone https://github.com/Forsakringskassan/template-api.git example-template
   cd example-template
 }
 

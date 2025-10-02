@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.5.0 (2025-10-02)
+
+### Features
+
+* semantic-release-release-scheduled b0b9f7a
+
 ## 2.4.0 (2025-10-02)
 
 ### Features

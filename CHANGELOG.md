@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.4.0 (2025-10-02)
+
+### Features
+
+* **@forsakringskassan/openapi-node-client-generator-cli:** public d068705
+
 ## 2.3.0 (2025-10-02)
 
 ### Features

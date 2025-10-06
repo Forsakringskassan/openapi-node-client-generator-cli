@@ -26,3 +26,4 @@ openapi-generator-cli.jar
 packages/example-template
 packages/openapi-node-client-generator-cli/template/
 packages/openapi-node-client-generator-cli-template/typescript-fetch/
+

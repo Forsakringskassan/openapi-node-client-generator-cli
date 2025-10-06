@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.5.1 (2025-10-06)
+
+### Bug Fixes
+
+* trigger version b28a9eb
+
 ## 2.5.0 (2025-10-02)
 
 ### Features

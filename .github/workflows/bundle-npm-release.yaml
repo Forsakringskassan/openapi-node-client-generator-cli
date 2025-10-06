@@ -1,4 +1,4 @@
-name: Semantic Release Release Scheduled
+name: Bundle NPM Release
 
 on:
     workflow_dispatch:
@@ -7,6 +7,6 @@ on:
 
 jobs:
   call-workflow:
-    uses: Forsakringskassan/.github/.github/workflows/semantic-release-release-scheduled.yaml@main
+    uses: Forsakringskassan/.github/.github/workflows/bundle-npm-release.yaml@main
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

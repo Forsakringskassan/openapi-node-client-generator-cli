@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.5.2 (2025-10-09)
+
+### Bug Fixes
+
+* **@forsakringskassan/openapi-node-client-generator-cli:** kopiera inte mock 18f1d79
+
 ## 2.5.1 (2025-10-06)
 
 ### Bug Fixes

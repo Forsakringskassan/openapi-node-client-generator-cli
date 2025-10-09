@@ -8,7 +8,8 @@ rm -rf template/node_modules \
     template/typescript-* \
     template/openapitools.json \
     template/README.md \
-    template/openapi.yaml
+    template/openapi.yaml \
+    template/src/mock
 
 echo "Copied template files:"
 find template

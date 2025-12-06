@@ -34,7 +34,7 @@
     "@forsakringskassan/semantic-release-monorepo-config": "3.7.0",
     "@html-validate/release-scripts": "6.10.0",
     "lerna": "9.0.3",
-    "prettier": "3.7.3",
+    "prettier": "3.7.4",
     "rimraf": "6.1.2",
     "typescript": "5.9.3"
   },

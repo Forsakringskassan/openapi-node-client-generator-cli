@@ -31,7 +31,7 @@
     "extends": "@forsakringskassan/semantic-release-monorepo-config"
   },
   "devDependencies": {
-    "@forsakringskassan/semantic-release-monorepo-config": "3.7.11",
+    "@forsakringskassan/semantic-release-monorepo-config": "3.7.12",
     "@html-validate/release-scripts": "6.10.0",
     "lerna": "9.0.5",
     "prettier": "3.8.1",

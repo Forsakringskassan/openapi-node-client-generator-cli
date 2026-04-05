@@ -61,7 +61,7 @@
     "@forsakringskassan/prettier-config": "3.3.6",
     "@types/node": "24.12.0",
     "dts-bundle-generator": "9.5.1",
-    "esbuild": "0.27.4",
+    "esbuild": "0.27.5",
     "esbuild-plugin-esm-cjs-shim": "0.1.0",
     "glob": "11.1.0",
     "npm-run-all2": "8.0.4",

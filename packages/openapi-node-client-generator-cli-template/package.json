@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@forsakringskassan/apimock-express": "2.15.1",
-    "@forsakringskassan/prettier-config": "3.3.6",
+    "@forsakringskassan/prettier-config": "3.3.7",
     "@types/node": "24.12.2",
     "dts-bundle-generator": "9.5.1",
     "esbuild": "0.28.0",

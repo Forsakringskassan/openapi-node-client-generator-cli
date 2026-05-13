@@ -57,7 +57,7 @@
     "git:clean": "git clean -fdx"
   },
   "devDependencies": {
-    "@forsakringskassan/apimock-express": "2.15.1",
+    "@forsakringskassan/apimock-express": "2.16.0",
     "@forsakringskassan/prettier-config": "3.3.9",
     "@types/node": "24.12.3",
     "dts-bundle-generator": "9.5.1",

@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.6.0 (2026-05-22)
+
+### Features
+
+* **deps:** support @forsakringskassan/apimock-express v3 b5ff64b
+* **deps:** update dependency npm-java-runner to v2 bffedab
+
 ## 2.5.2 (2025-10-09)
 
 ### Bug Fixes

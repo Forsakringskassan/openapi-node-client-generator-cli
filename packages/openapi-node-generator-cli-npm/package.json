@@ -1,6 +1,6 @@
 {
   "name": "@forsakringskassan/openapi-node-generator-cli-npm",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "description": "Downloader Openapi Generator CLI",
   "type": "module",
   "runnable-jar-regexp": ".*openapi-generator-cli.jar",

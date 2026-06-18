@@ -12,15 +12,8 @@
     "url": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli.git",
     "directory": "packages/openapi-node-client-generator-cli-template"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "FK IT",
-  "main": "./dist/typescript-fetch/index.cjs",
-  "files": [
-    "dist",
-    "!**/*.sh",
-    "!**/.openapi-generator",
-    "!**/.openapi-generator-ignore"
-  ],
   "sideEffects": false,
   "exports": {
     ".": {
@@ -43,6 +36,13 @@
     },
     "./dist/typescript-fetch": "./dist/typescript-fetch/index.js"
   },
+  "main": "./dist/typescript-fetch/index.cjs",
+  "files": [
+    "dist",
+    "!**/*.sh",
+    "!**/.openapi-generator",
+    "!**/.openapi-generator-ignore"
+  ],
   "scripts": {
     "prebuild": "npm run prettier:write",
     "build": "run-s generate:* && cp openapi.yaml dist",
@@ -55,6 +55,10 @@
     "generate:typings": "dts-bundle-generator --config dts-config.js",
     "prettier:write": "prettier --no-error-on-unmatched-pattern \"src/mock/{**/,}*.{js,json,ts}\" --write",
     "git:clean": "git clean -fdx"
+  },
+  "prettier": "@forsakringskassan/prettier-config",
+  "dependencies": {
+    "@forsakringskassan/openapi-node-generator-cli-npm": "2.6.1"
   },
   "devDependencies": {
     "@forsakringskassan/apimock-express": "3.0.0",
@@ -69,9 +73,6 @@
     "typescript": "5.9.3",
     "uuid": "13.0.2"
   },
-  "dependencies": {
-    "@forsakringskassan/openapi-node-generator-cli-npm": "2.6.1"
-  },
   "peerDependencies": {
     "@forsakringskassan/apimock-express": "^2.0.0 || ^3.0.0"
   },
@@ -83,7 +84,6 @@
       "optional": true
     }
   },
-  "prettier": "@forsakringskassan/prettier-config",
   "engines": {
     "node": ">= 20.0.0",
     "npm": ">= 9.0.0"

@@ -14,7 +14,7 @@
     "url": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli.git",
     "directory": "packages/openapi-node-client-generator-cli-template"
   },
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "FK IT",
   "scripts": {
     "build": "npm run download-jar && npm run copy-jar",

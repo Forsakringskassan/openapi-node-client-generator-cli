@@ -4,6 +4,7 @@
   "description": "Wraps Openapi Generator CLI. Generates an opinionated, minimal config, client NPM package, given an OpenAPI spec.",
   "type": "module",
   "keywords": [
+    "försäkringskassan",
     "openapi"
   ],
   "homepage": "https://github.com/Forsakringskassan/openapi-node-client-generator-cli",

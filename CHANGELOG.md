@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.6.1 (2026-06-18)
+
+### Bug Fixes
+
+* **@forsakringskassan/openapi-node-client-generator-cli-template, @forsakringskassan/openapi-node-client-generator-cli, @forsakringskassan/openapi-node-generator-cli-npm:** force new version 41ff525
+
 ## 2.6.0 (2026-05-22)
 
 ### Features

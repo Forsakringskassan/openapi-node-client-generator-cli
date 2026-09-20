@@ -6,9 +6,13 @@ import path from "path";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import { fileURLToPath } from "url";
+import { createRequire } from "module";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const require = createRequire(import.meta.url);
+
+const GENERATOR_CLI_NPM_PACKAGE = "@forsakringskassan/openapi-node-generator-cli-npm";
 
 const pkg = JSON.parse(
     fs.readFileSync(new URL("./package.json", import.meta.url), "utf-8"),
@@ -73,7 +77,20 @@ async function run({ packageName, packageVersion, packageUrl, dryRun, openapiSpe
         type: "git",
         url: `${packageUrl}.git`,
     };
+    if (createdPkg.dependencies?.[GENERATOR_CLI_NPM_PACKAGE]) {
+        createdPkg.dependencies[GENERATOR_CLI_NPM_PACKAGE] =
+            resolveInstalledVersion(GENERATOR_CLI_NPM_PACKAGE);
+    }
     fs.writeFileSync(createdPkgJsonPath, JSON.stringify(createdPkg, null, 2), "utf-8");
 
     console.log(`Patched ${createdPkgJsonPath}`);
+}
+
+function resolveInstalledVersion(packageName) {
+    // template/package.json is built by copy-template.sh before semantic-release
+    // bumps versions, so its pinned dependency version is always stale by one
+    // release. Read the version actually installed alongside this CLI instead,
+    // which is guaranteed to exist on the registry.
+    const pkgJsonPath = require.resolve(`${packageName}/package.json`);
+    return JSON.parse(fs.readFileSync(pkgJsonPath, "utf-8")).version;
 }

@@ -63,7 +63,7 @@
   "devDependencies": {
     "@forsakringskassan/apimock-express": "3.2.1",
     "@forsakringskassan/prettier-config": "3.7.11",
-    "@types/node": "24.19.0",
+    "@types/node": "24.19.1",
     "dts-bundle-generator": "9.5.1",
     "esbuild": "0.28.2",
     "esbuild-plugin-esm-cjs-shim": "0.1.0",

@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@forsakringskassan/openapi-node-client-generator-cli-template": "2.6.2",
+    "@forsakringskassan/openapi-node-generator-cli-npm": "2.6.2",
     "yargs": "^18.0.0"
   },
   "engines": {

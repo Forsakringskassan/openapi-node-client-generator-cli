@@ -33,7 +33,7 @@
   "devDependencies": {
     "@forsakringskassan/semantic-release-monorepo-config": "3.12.12",
     "@html-validate/release-scripts": "6.10.0",
-    "lerna": "9.0.7",
+    "lerna": "10.1.1",
     "prettier": "3.10.0",
     "rimraf": "6.1.4",
     "typescript": "5.9.3"

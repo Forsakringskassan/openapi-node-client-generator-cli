@@ -31,11 +31,11 @@
     "extends": "@forsakringskassan/semantic-release-monorepo-config"
   },
   "devDependencies": {
-    "@forsakringskassan/semantic-release-monorepo-config": "3.10.1",
+    "@forsakringskassan/semantic-release-monorepo-config": "3.12.14",
     "@html-validate/release-scripts": "6.10.0",
     "lerna": "9.0.7",
-    "prettier": "3.8.3",
-    "rimraf": "6.1.3",
+    "prettier": "3.10.1",
+    "rimraf": "6.1.4",
     "typescript": "5.9.3"
   },
   "engines": {

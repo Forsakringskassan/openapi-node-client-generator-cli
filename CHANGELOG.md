@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.6.3 (2026-11-19)
+
+### Bug Fixes
+
+* **@forsakringskassan/openapi-node-client-generator-cli:** use actually installed generator-cli-npm version in generated package 93bb835, closes #32
+
 ## 2.6.2 (2026-06-18)
 
 ### Bug Fixes
